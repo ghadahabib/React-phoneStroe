@@ -55,12 +55,22 @@ ProductItem.propTypes = {
 const ProductWrapper = styled.div`
 .card{
   border-color: transparent;
-  transition: all .6s linear;
+  transition: all .6s ease-in-out;
 }
 .card-footer{
-  background-color : transparent;
+  background-color : var(--main-yello);
   border-top : transparent;
-  transition: all .6s linear;
+  transition: all .4s ease-in-out;
+  p{
+    color: var(--main-white);
+    transition: all .4s ease-in-out;
+
+  }
+  h5{
+    color: var(--main-color);
+    transition: all .4s ease-in-out;
+
+  }
 }
 &:hover{
   .card{
@@ -69,6 +79,9 @@ const ProductWrapper = styled.div`
   }
   .card-footer{
     background-color : rgba(247, 247 , 247);
+    p,h5{
+      color: var(--main-yello);
+    }
   }
 }
 .img-container{
@@ -78,13 +91,17 @@ const ProductWrapper = styled.div`
     .card-img-top{
       transform : scale(1.2);
     }
-    .cart-btn{{
+    .cart-btn{
       transform : translate(0, 0);
+      @media (max-width: 991.98px) {
+        transform : none;
+        background-color: var(--main-yello);
+      }
     }
   }
 }
   .card-img-top{
-    transition: all .6s linear;
+    transition: all .4s ease-in-out;
   } 
   .cart-btn{
     position : absolute;
@@ -97,10 +114,13 @@ const ProductWrapper = styled.div`
     font-size : 1.4rem;
     border-radius : .5rem 0 0 0;
     transform : translate(100%, 100%);
-    transition: all .6s linear;
+    transition: all .4s ease-in-out;
     &:hover{
       color : var(--main-color);
       cursor : pointer;
+    }
+    @media (max-width: 991.98px) {
+      transform : translate(0,0);
     }
   }
 

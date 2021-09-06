@@ -17,6 +17,11 @@ body{
   letter-spacing: .3rem;
   text-transform: uppercase;
 }
+@media (max-width: 575.98px) {
+  .section-title{
+    letter-spacing : .1rem;
+  } 
+ }
 .text-blue{
   color: var(--main-color);
 }

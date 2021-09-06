@@ -39,7 +39,7 @@ render() {
                  </p>
                  <div className='buttons'>
                    <Link to='/'>
-                      <CustmBtn>
+                      <CustmBtn modal>
                         back to products
                       </CustmBtn>
                    </Link>

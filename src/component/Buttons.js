@@ -22,4 +22,7 @@ transition : all .5s ease-in-out;
 &:focus{
   outline : none;
 };
+@media (max-width: 575.98px) {
+  font-size : 1.1rem;
+};
 `

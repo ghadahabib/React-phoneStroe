@@ -35,11 +35,19 @@ render() {
 //style
  const NavbarWrapper = styled.nav`
  background : var(--main-color);
+ .navbar-brand{
+  @media (max-width: 575.98px) { 
+    margin-right:.5rem!important;
+   }
+ }
  .nav-link{
    color : var(--main-white);
    font-size : 1.3rem;
    text-transform : capitalize;
-
+   @media (max-width: 575.98px) { 
+     font-size:1.2rem;
+     letter-spacing : -.01px;
+    }
  }
  `
 
